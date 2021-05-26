@@ -77,14 +77,17 @@
         }
         function changeImage() {
             var image = document.getElementById('myImage4');
-            if (image.src.match("GAN_Generated_Imgs/generated1.jpg")) {
-                image.src = "GAN_Generated_Imgs/generated2.jpg";
+            if (image.src.match("GAN_Generated_Imgs/g1.png")) {
+                image.src = "GAN_Generated_Imgs/g2.jpg";
             }
-			else if (image.src.match("GAN_Generated_Imgs/generated2.jpg")) {
-                image.src = "GAN_Generated_Imgs/generated3.jpg";
+		else if (image.src.match("GAN_Generated_Imgs/g2.jpg")) {
+                image.src = "GAN_Generated_Imgs/g3.jpg";
+            }
+		else if (image.src.match("GAN_Generated_Imgs/g3.jpg")) {
+                image.src = "GAN_Generated_Imgs/g4.jpg";
             }
             else {
-                image.src = "GAN_Generated_Imgs/generated1.jpg";
+                image.src = "GAN_Generated_Imgs/g1.png";
             }
         }
 		
@@ -196,7 +199,7 @@
 			<center>
 				<h2>Generated Images</h2>
 				<div class="image">
-					<a href="GAN_Generated_Imgs/generated1.jpg"><img src="GAN_Generated_Imgs/generated1.jpg" id="myImage4" width="75%"/></a>
+					<a href="GAN_Generated_Imgs/g1.png"><img src="GAN_Generated_Imgs/g1.png" id="myImage4" width="75%"/></a>
 				</div>
 				<input type="button" class="button" onclick="changeImage()" value="Generate" />
 			</center>
